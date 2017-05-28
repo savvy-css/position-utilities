@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/position-utilities",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Position utilities for Savvy CSS.",
   "main": "build/position-utilities.css",
   "style": "build/position-utilities.css",
