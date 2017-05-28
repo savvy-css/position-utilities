@@ -1,1 +1,31 @@
 /* @define position-utilities */
+.u-relative { position: relative !important; }
+.u-absolute { position: absolute !important; }
+
+/*
+ * 1. Promote fixed elements into a new layer, for performance
+ *    reasons.
+ *    see: https://benfrain.com/improving-css-performance-fixed-position-elements/
+ */
+.u-fixed {
+  backface-visibility: hidden !important; /* 1 */
+  position: fixed !important;
+}
+
+.u-edge-top { top: 0 !important; }
+.u-edge-right { right: 0 !important; }
+.u-edge-bottom { bottom: 0 !important; }
+.u-edge-left { left: 0 !important; }
+
+.u-fit-center {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate3d(-50%, -50%, 0) !important;
+}
+
+.u-absolute-centered {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate3d(-50%, -50%, 0) !important;
+}
